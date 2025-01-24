@@ -174,5 +174,5 @@ def generate_comments():
         return jsonify({"error": str(e)}), 500
 
 # Run the Flask app
-# if __name__ == '__main__':
-#     app.run()
+if __name__ == '__main__':
+    app.run()

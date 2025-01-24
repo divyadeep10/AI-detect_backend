@@ -63,7 +63,7 @@ def home():
         ]
     })
 
-@app.route('/detect-language', methods=['POST'])
+@app.route('/detect-language', methods=['POST', 'GET'])
 def detect_language():
     code = request.json.get('code', '')
     if not code:

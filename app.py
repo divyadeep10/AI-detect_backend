@@ -5,7 +5,7 @@ import google.generativeai as genai
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, origins="https://ai-code-detect-582tcm1dw-divyadeep10s-projects.vercel.app")
+CORS(app)
 
 # Configure the API
 API_KEY = os.getenv("GEMINI_API_KEY")

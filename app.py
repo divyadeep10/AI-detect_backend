@@ -19,7 +19,7 @@ API_KEY = os.getenv("GEMINI_API_KEY")
 # print(API_KEY , "API_KEY")
 # if not API_KEY:
 #     raise EnvironmentError("GEMINI_API_KEY environment variable is missing.")
-genai.configure(api_key=API_KEY,timeout=9)
+genai.configure(api_key=API_KEY)
 # genai.configure(api_key="AIzaSyBrTffN_pC2QL_BFJQ__TCUHHIXFxOP6wI")
 # Initialize the generative model
 model = genai.GenerativeModel("gemini-1.5-flash")

@@ -16,7 +16,7 @@ CORS(app,
 
 # Configure the API
 API_KEY = os.getenv("GEMINI_API_KEY")
-print(API_KEY , "API_KEY")
+# print(API_KEY , "API_KEY")
 # if not API_KEY:
 #     raise EnvironmentError("GEMINI_API_KEY environment variable is missing.")
 genai.configure(api_key=API_KEY)

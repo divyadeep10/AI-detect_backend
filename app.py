@@ -5,14 +5,14 @@ import google.generativeai as genai
 
 # Initialize Flask app
 app = Flask(__name__)
-# CORS(app)
+CORS(app)
 
-CORS(app, 
-     resources={r"/*": {
-         "origins": "*",  # You can specify a specific origin here like 'http://yourfrontend.com'
-         "methods": ["GET", "POST", "PUT", "DELETE"],
-         "allow_headers": ["Content-Type", "Authorization"]
-     }})
+# CORS(app, 
+#      resources={r"/*": {
+#          "origins": "*",  # You can specify a specific origin here like 'http://yourfrontend.com'
+#          "methods": ["GET", "POST", "PUT", "DELETE"],
+#          "allow_headers": ["Content-Type", "Authorization"]
+#      }})
 
 # Configure the API
 API_KEY = os.getenv("GEMINI_API_KEY")

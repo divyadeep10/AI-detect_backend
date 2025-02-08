@@ -1,0 +1,51 @@
+openapi: 3.0.0
+info:
+  title: AI-Powered Code Analysis API
+  version: 1.0.0
+paths:
+  /detect-language:
+    post:
+      summary: Detect programming language from code
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                code:
+                  type: string
+      responses:
+        "200":
+          description: Detected language
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  language:
+                    type: string
+  /explain-code:
+    post:
+      summary: Explain a given code snippet
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                code:
+                  type: string
+                language:
+                  type: string
+      responses:
+        "200":
+          description: Explanation of the code
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  explanation:
+                    type: string
